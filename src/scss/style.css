@@ -95,6 +95,7 @@ header nav .navbar .icons i {
   font-weight: 600;
   padding: 15px;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 header nav .navbar .icons i:hover {
   background-color: #efefef;

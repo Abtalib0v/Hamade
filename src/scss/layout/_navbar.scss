@@ -41,12 +41,14 @@ header {
             .icons {
                 display: flex;
                 gap: 5px;
+                
                 i {
                     font-size: 20px;
                     font-family: "jost";
                     font-weight: 600;
                     padding: 15px;
                     transition: 0.3s ease-in-out;
+                    cursor: pointer;
                     &:hover {
                         background-color: #efefef;
                         border-radius: 500px;
