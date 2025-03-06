@@ -165,6 +165,7 @@ header nav .navbar .icons i:hover {
   height: 44px;
   line-height: 44px;
   padding: 0 30px;
+  background-color: #efefef;
   color: #6b7280;
   display: block;
   font-weight: 500;
@@ -176,7 +177,7 @@ header nav .navbar .icons i:hover {
 }
 #product .categories a:hover {
   font-weight: 600;
-  background-color: #efefef;
+  background-color: rgb(225, 225, 225);
 }
 #product .filter_by {
   margin-top: 40px;
@@ -371,6 +372,8 @@ header nav .navbar .icons i:hover {
   text-align: center;
 }
 #product .cards .cards_text a {
+  display: flex;
+  justify-content: center;
   text-decoration: none;
 }
 #product .cards .cards_text a h1 {
