@@ -1,0 +1,43 @@
+#popular_parts {
+    padding: 147px 160px;
+    background-color: #e7e8eb;
+    h1 {
+        color: #222;
+        font-family: "jost";
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .home {
+        display: flex;
+        font-family: "jost";
+        align-items: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #222222;
+            font-weight: 300;
+
+            h2 {
+                padding: 0px 8px;
+                font-size: 11.9px;
+                font-weight: 600;
+            }
+
+
+        }
+        h4 {
+            font-weight: 900;
+        }
+
+        h3 {
+            padding: 0px 8px;
+            font-size: 11.9px;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  padding: 0px 100px;
+}
+header nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+header nav .navbar .logo {
+  padding: 15px 15px 15px 0px;
+}
+header nav .navbar .logo a img {
+  width: 100%;
+  height: 34.5px;
+}
+header nav .navbar .sections ul {
+  display: flex;
+  padding: 0px 15px;
+}
+header nav .navbar .sections ul li {
+  padding: 10px 30px;
+}
+header nav .navbar .sections ul li a {
+  font-size: 16px;
+  font-family: "jost";
+  text-decoration: none;
+  color: #222222;
+}
+header nav .navbar .icons {
+  display: flex;
+  gap: 5px;
+}
+header nav .navbar .icons i {
+  font-size: 20px;
+  font-family: "jost";
+  font-weight: 600;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+header nav .navbar .icons i:hover {
+  background-color: #efefef;
+  border-radius: 500px;
+  font-size: 20px;
+}
+
+#popular_parts {
+  padding: 147px 160px;
+  background-color: #e7e8eb;
+}
+#popular_parts h1 {
+  color: #222;
+  font-family: "jost";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 30px;
+}
+#popular_parts .home {
+  display: flex;
+  font-family: "jost";
+  align-items: center;
+}
+#popular_parts .home a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #222222;
+  font-weight: 300;
+}
+#popular_parts .home a h2 {
+  padding: 0px 8px;
+  font-size: 11.9px;
+  font-weight: 600;
+}
+#popular_parts .home h4 {
+  font-weight: 900;
+}
+#popular_parts .home h3 {
+  padding: 0px 8px;
+  font-size: 11.9px;
+  font-weight: 600;
+}
+
+#product {
+  padding: 80px 160px 100px 160px;
+}
+#product .categories {
+  padding-top: 20px;
+}
+#product .categories .text {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+#product .categories .text i {
+  font-weight: 900;
+  font-size: 20px;
+}
+#product .categories .text h1 {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "jost";
+  text-transform: uppercase;
+}
+#product .categories a {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 30px;
+  color: #6b7280;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  font-family: "jost";
+  transition: 0.1s ease-in-out;
+}
+#product .categories a:hover {
+  font-weight: 600;
+  background-color: #efefef;
+}
+#product .filter_by {
+  margin-top: 40px;
+}
+#product .filter_by .text {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+#product .filter_by .text i {
+  font-weight: 900;
+  font-size: 20px;
+}
+#product .filter_by .text h1 {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "jost";
+  text-transform: uppercase;
+}
+#product .filter_by button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "jost";
+  padding: 12px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #0a5d5d;
+  color: #FFF;
+  border: 0px;
+  transition: 0.3s ease-in-out;
+}
+#product .filter_by button i {
+  margin-right: 5px;
+  font-size: 15px;
+}
+#product .filter_by button:hover {
+  background-color: #082e21;
+  color: #FFF;
+}
+#product .availability .text h2 {
+  font-size: 14px;
+  font-family: "jost";
+  color: #202020;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 25px 0;
+  padding-top: 25px;
+  border-top: 1px solid #ececec;
+}
+#product .availability .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#product .availability .content .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#product .availability .content .checkbox .left {
+  display: flex;
+  align-items: center;
+}
+#product .availability .content .checkbox .left input {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+#product .availability .content .checkbox .left input:hover {
+  font-weight: 500;
+  color: #399;
+}
+#product .availability .content .checkbox .left h1 {
+  font-size: 14px;
+  cursor: pointer;
+  color: #6b7280;
+  font-family: "jost";
+}
+#product .availability .content .checkbox .left h1:hover {
+  font-weight: 500;
+  color: #399;
+}
+#product .availability .content .checkbox .right {
+  align-items: center;
+}
+#product .availability .content .checkbox .right h4 {
+  font-size: 11px;
+  font-family: "jost";
+  color: #202020;
+}
+#product .filters {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 10px 12px 30px 12px;
+}
+#product .filters .featured a {
+  display: flex;
+  gap: 10px;
+  font-family: "jost";
+  font-size: 14px;
+  text-decoration: none;
+  color: #222222;
+}
+#product .filters .featured a h1 {
+  font-weight: 700;
+}
+#product .filters .grid {
+  display: flex;
+  gap: 10px;
+}
+#product .filters .grid i {
+  background-color: #efefef;
+  font-size: 20px;
+  color: #222222;
+  padding: 10px;
+  transition: 0.1s ease-in-out;
+}
+#product .filters .grid i:hover {
+  background-color: #000000;
+  color: #FFF;
+}
+#product .cards {
+  margin-bottom: 50px;
+}
+#product .cards .cards_image {
+  position: relative;
+  overflow: hidden;
+}
+#product .cards .cards_image img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+#product .cards .cards_image .hover_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+  transform: scale(1);
+}
+#product .cards .cards_image .hover_image img {
+  width: 100%;
+  height: 100%;
+}
+#product .cards .cards_image .cards_btn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  gap: 10px;
+}
+#product .cards .cards_image .cards_btn button {
+  width: 40px;
+  height: 40px;
+  border-radius: 500px;
+  background-color: #FFF;
+  color: #0a5d5d;
+  border: 0px;
+  transition: 0.5s ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+}
+#product .cards .cards_image .cards_btn button:hover {
+  transition: 0s ease-in-out;
+  background-color: #0a5d5d;
+  color: #FFF;
+}
+#product .cards .cards_image .cards_btn button i {
+  font-size: 14px;
+}
+#product .cards:hover .hover_image {
+  transform: scale(1.2);
+  opacity: 1;
+}
+#product .cards:hover .cards_btn button {
+  transform: scale(1);
+  opacity: 1;
+}
+#product .cards .cards_text {
+  padding: 17px 0px 0px 0px;
+  line-height: 1.7;
+  text-align: center;
+}
+#product .cards .cards_text a {
+  text-decoration: none;
+}
+#product .cards .cards_text a h1 {
+  font-family: "jost";
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 3px;
+}
+#product .cards .cards_text a h1:hover {
+  color: #0a5d5d;
+}
+#product .cards .cards_text i {
+  font-size: 14px;
+  color: #c9c9c9;
+  font-weight: bold;
+}
+#product .cards .cards_text h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "jost";
+}/*# sourceMappingURL=style.css.map */
